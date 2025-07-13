@@ -1,1 +1,49 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #B3D9FF; /* Azul pastel */
+    color: #003366; /* Azul rey */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
 
+/* Títulos */
+h1, h2 {
+    text-align: center;
+    color: #003366;
+}
+
+/* Estilo para los semestres */
+.semester {
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #003366;
+    border-radius: 8px;
+    width: 80%;
+}
+
+/* Estilo para las asignaturas */
+.subject {
+    background-color: #ADD8E6; /* Celeste */
+    margin: 5px;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+/* Cambio de color cuando la asignatura está completada */
+.subject.completed {
+    background-color: #00B8A9; /* Calipso */
+    text-decoration: line-through; /* Tacha el texto */
+}
+
+/* Efecto de hover */
+.subject:hover {
+    background-color: #87CEEB; /* Celeste claro */
+}
